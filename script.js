@@ -118,7 +118,7 @@ console.log(calcSumV2(numbers));
 const calcAverageLaptopCost = (anArrayOfLaptops) => {
     let total = anArrayOfLaptops.reduce((accumulator, currentValue) => {
         return accumulator + currentValue.price;
-    })
+    },0);
     return total/anArrayOfLaptops.length;
 };
 
@@ -167,3 +167,4 @@ const addLaptop = (array, brand, size, price, touchscreen) => {
 addLaptop(objects, "Apple", 15, 1600, false);
 
 console.log(objects);
+
